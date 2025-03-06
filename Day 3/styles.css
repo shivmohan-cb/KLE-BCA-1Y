@@ -1,0 +1,66 @@
+/* Units
+ px = pixel
+ % = percentage, relative to parent element
+ rem = root element size
+ em = element size
+ vw = widht of viewport (width of screen/window)
+ vh = height of viewport (height of screen/window)
+*/
+
+* {
+    border: 1px solid black;
+    padding: 2px 2px;
+}
+
+ body {
+    height: 80vh;
+    width: 50vw;
+ }
+h1 {
+    /* default display : block */
+    display: inline;
+    /* default font-weight : bolder/900 */
+    font-weight: 100;
+}
+
+p {
+    /* default display: block */
+
+}
+span {
+    /* default display : inline */
+    display: inline-block;
+}
+
+div {
+    margin-top: 12px;
+}
+
+input {
+    /* default display: inline */
+}
+
+/* use id to select one element */
+#first {
+   color: white;
+   background-color: gray;
+}
+
+#second {
+ color: gray;
+ background-color: orange;
+}
+
+/* to select multiple element use class */
+.start {
+    padding: 5px 5px;
+    color :white;
+    background-color: black;
+    border-color: white;
+}
+
+.end {
+  margin: 5px;
+  color: blue;
+  background-color:  pink;   
+}
