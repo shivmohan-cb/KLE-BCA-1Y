@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+}
+
+.container {
+    position: relative;
+    padding: 5px 5px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+#always-moving-box {
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.container:hover #always-moving-box {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: moveForward 1s 1s;
+}
+
+/* keyframe for animation function */
+@keyframes moveForward {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: translateX(400px);
+    }
+}
+
+#ball {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid rgb(151, 2, 2);
+    box-shadow: inset 2px 2px 5px 2px white;
+}
+.container:hover #ball {
+  animation: roll 4s infinite;
+}
+/* 
+circ = 2*3.14*radius
+   =2*3.14*30px
+   =191.4px
+*/
+@keyframes roll {
+    0% {
+        transform:translateX(0) rotate(0deg);
+    }
+    50% {
+        transform:translateX(382.8px) rotate(720deg);
+    }
+
+    100% {
+        transform:translateX(0) rotate(0deg);
+    }
+}

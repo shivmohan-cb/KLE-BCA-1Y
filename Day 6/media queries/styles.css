@@ -1,0 +1,38 @@
+body {
+    background-color: red;
+}
+
+img {
+    width: 100%;
+}
+
+/* when  width will match exactly 375px */
+@media screen and (width:375px) {
+    body {
+        background-color: purple;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+
+}
+
+/* when screen size  will be below 375px */
+@media screen and (max-width:375px) {
+    body {
+        background-color: green;
+    }
+    h1 {
+        color: white;
+    }
+}
+
+/* when screen size will be more than 375px */
+@media screen and (min-width:375px) {
+    body {
+        background-color: orange;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+}
