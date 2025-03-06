@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0 0;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+    /* text-align: right; */
+    text-align: center;
+}
+
+.container {
+    border: 1px solid green;
+    text-align: center;
+    padding: 3rem 3rem;
+}
+
+#box {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    /* box-shadow : Xaxis Yaxis blurRadius shadowRadius shadowColor  */
+    /* box-shadow: 10px 10px 20px 10px gray; */
+    /* use inset to give shadow inside of element  */
+    box-shadow: inset 10px 10px 20px 10px gray;
+    /* border-radius : leftTop rightTop rightBottom leftBottom */
+    border-radius: 10px 50% 50% 0;
+    /* border-radius: 50%; */
+}
+
+/* Transition */
+#redbox,
+#bluebox {
+    height: 50px;
+    width: 50px;
+    margin: 12px;
+    transition: width 1s;
+}
+
+#redbox {
+    background-color: red;
+}
+
+#bluebox {
+    background-color: blue;
+}
+
+#redbox:hover,
+#bluebox:hover {
+    width: 300px;
+}
+
+#blackbox {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    transition: background 1s, width 1s, border-radius 1s;
+}
+#blackbox h1 {
+    color: white;
+    transition: color 1s;
+}
+
+#blackbox:hover {
+    background-color: purple;
+    width: 500px;
+    border-radius: 5rem;
+}
+/* on blackbox hover h1 color will change */
+#blackbox:hover h1 {
+    color: black;
+}
+
+/* Transform */
+#rolling-ball {
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    box-shadow: inset 5px 10px 5px 2px white;
+    border: 1px solid red;
+    transition: border-radius 1s,transform 1s;
+}
+
+.container:hover #rolling-ball {
+  border-radius: 50%;
+  transform: rotate(360deg);
+}
+/* moving box to 200px */
+#moving-box {
+    height: 60px;
+    width: 100px;
+    background-color: gray;
+    transition: transform 1s;
+}
+
+.container:hover #moving-box {
+    transform: translateX(200px);
+}
+
+#scale-box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition: transform 2s;
+}
+
+.container:hover #scale-box {
+    transform: scale(0.5);
+}
