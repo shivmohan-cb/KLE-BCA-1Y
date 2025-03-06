@@ -1,0 +1,24 @@
+HTML - Hyper Text markup language
+
+HTML5
+extension of html file is .html
+
+
+head - meta data of web page 
+  title 
+  content description
+  link css files 
+
+body - main content of web page
+
+--------------------------------------
+CSS - cascading style sheet is used to style html element
+
+Three ways to implement css on html elements
+
+inline css 
+ - inline css has more priority than internal css
+internal css
+  - internal css has more priority than the external css
+external css
+  
