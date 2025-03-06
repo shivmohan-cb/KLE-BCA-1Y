@@ -1,0 +1,37 @@
+/* for selecting id we use #id-name */
+
+#parent {
+    /* flex box is used for 1-D layouts */
+    display: flex;
+    /* to change the direction of flex row or column */
+    /* by default fle-direction : row */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* justify content will justify content on the bases of flex-direction if direction */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: start; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    /* justify-content: stretch; */
+    /* align items will also work with flex direction */
+    align-items: center;
+    /* align-items: start; */
+    /* align-items: end; */
+    border: 1px solid black;
+    height: 100px;
+}
+
+/* for selecting class we use .class-name */
+.child {
+    /* by default div is display : block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 50px;
+    width: 80px;
+}

@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: rgb(72, 174, 72);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.names-holder {
+  position: relative;
+}
+
+.names-holder h2 {
+    position: sticky;
+    top:0;
+    left:0;
+    padding:12px 12px;
+    background-color: gray; 
+}
+
+.names {
+ padding:6px 6px;
+ margin: 6px;
+ border:1px solid black; 
+}

@@ -1,0 +1,71 @@
+* {
+ border: 1px solid black;
+ padding: 8px 8px; 
+ margin: 4px;
+}
+
+#parent {
+/* defautl position : static */
+ position: relative;
+}
+
+#parent > div {
+    color: white;
+}
+
+#child1 {
+/* defautl position : static */
+ position: absolute;
+ /* left: 50px; */
+ /* right: 0; */
+ /* bottom: 0; */
+ top:0;
+ left:0;
+/* by defautl z-index : 0 */
+ /* z-index: 3; */
+ background-color: black;
+}
+
+#child2 {
+/* defautl position : static */
+position: absolute;
+left:25px;
+top:0;
+/* top:25px; */
+
+background-color: blue;
+/* by defautl z-index : 0 */
+
+/* z-index: 2; */
+}
+
+#child3 {
+/* defautl position : static */
+position: absolute;
+left:50px;
+top:0;
+/* top:50px; */
+background-color: red;
+/* by defautl z-index : 0 */
+/* z-index: 1; */
+}
+
+#parent2 {
+  position: relative;
+}
+#parent2 h1 {
+    /* position fixed is always relative to viewport */
+    /* position: fixed; */
+    /* sticky toggles between fixed and relative and it can be relative of its parent */
+    position: sticky;
+    /* left : calc(50% - 144px) ; */
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: green;
+  color:white;
+}
+
+.child {
+ 
+}
